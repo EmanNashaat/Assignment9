@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/assign9.css">
+    <title>My Bookmark</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-light-emphasis   text-start py-4 ps-4">Bookmarker</h2>
+        <div class="border-top border-bottom border-3 border-primary py-2">
+            <div class="bg-primary-subtle my-2">
+                <h4 class="text-center py-4">Bookmark your favorite sites</h4>
+                <label for="siteNameInp" class="w-100 text-center fw-bold py-2">Site Name</label>
+                <input type="text" name="siteName" id="siteNameInp" placeholder="Bookmark Name" class="form-control w-75 m-auto">
+                    <div id="wrong1" class="w-75 py-2 my-2  m-auto border border-1 border-danger bg-danger-subtle rounded-2 text-center text-danger fw-bold wron d-none" >Name is required</div>
+                <label for="siteUrlInp" class="w-100 text-center fw-bold py-2">Site URL</label>
+                <input type="text" name="siteURL" id="siteUrlInp" placeholder="website URL" class="form-control w-75 m-auto">
+                    <div id="wrong2" class="w-75 py-2 my-2  m-auto border border-1 border-danger bg-danger-subtle rounded-2 text-center text-danger fw-bold wron d-none" >Url Field is required</div>
+                <div class="w-100 text-center py-4">
+                    <button onclick="addSite()" class=" rounded-2 bg-primary px-3 py-2 text-white border border-0 btn btnMain">Submit</button>
+                </div>
+            </div>
+            <div class="bg-primary-subtle my-2 px-3 py-2 mt-4">
+                <table class="w-50" id="tbody">
+                    
+                </table>
+            </div>
+        </div>
+        <h6 class="text-light-emphasis fw-bolder py-4 ps-4">© 2019 Bookmarker Inc.</h6>
+\    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/assign9.js"></script>
+</body>
+</html>
